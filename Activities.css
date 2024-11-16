@@ -1,0 +1,138 @@
+
+/* สไตล์ Navbar */
+.navbar {
+    display: flex; /* ใช้ Flexbox สำหรับการจัดวาง */
+    justify-content: space-between; /* ช่องว่างระหว่างองค์ประกอบใน Navbar */
+    align-items: center; /* จัดวางองค์ประกอบแนวตั้ง */
+    padding: 10px 20px; /* เว้นระยะห่างภายใน Navbar */
+    background-color: #333; /* สีพื้นหลังของ Navbar */
+    color: white; /* สีข้อความใน Navbar */
+}
+
+.navbar .logo a {
+    color: white; /* กำหนดสีของลิงค์เป็นสีขาว */
+    text-decoration: none; /* เอาเส้นใต้ลิงค์ออก */
+    transition: transform 0.2s ease, color 0.2s ease; /* เพิ่ม transition เพื่อให้การซูมลื่นไหล */
+    display: inline-block; /* กำหนดให้เป็น inline-block เพื่อให้ transform ทำงาน */
+}
+
+.navbar .logo a:hover {
+    color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
+    transform: scale(1.2); /* ซูม 10% เมื่อวางเมาส์ */
+}
+
+/* โลโก้เดิม */
+.navbar .logo {
+    font-size: 30px; /* ขนาดตัวอักษรโลโก้ */
+    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของข้อความ */
+}
+
+.nav-links {
+    list-style: none; /* เอาสัญลักษณ์หน้ารายการออก */
+    display: flex; /* จัดลิงก์ในแนวนอน */
+    gap: 20px; /* ช่องว่างระหว่างลิงก์ */
+}
+
+.nav-links a {
+    color: white; /* สีของลิงก์ */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    font-size: 15px; /* ขนาดตัวอักษรของลิงก์ */
+    font-family: 'Poppins', sans-serif; /* ฟอนต์ Poppins */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของลิงก์ */
+    transition: transform 0.3s ease, color 0.2s ease; /* เพิ่ม transition เพื่อให้การซูมลื่นไหล */
+    display: inline-block; /* กำหนดให้เป็น inline-block เพื่อให้ transform ทำงาน */
+}
+
+.nav-links a:hover {
+    color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
+    transform: scale(1.2); /* ซูม 10% เมื่อวางเมาส์ */
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #2C2C2B;
+    color: white;
+}
+
+
+/* ส่วน Activities */
+.Activities {
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    background-color: #2C2C2B; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    padding: 20px 20px; /* เว้นระยะห่างภายใน */
+}
+
+.Activities-section img {
+    width: auto; /* ความกว้างอัตโนมัติ */
+    height: 220px; /* ความสูงของรูปภาพ */
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #2C2C2B;
+}
+
+.header-section h1 {
+    font-size: 55px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของลิงก์ */
+    font-family: 'Mitr', sans-serif;
+    font-weight: 500
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* สไตล์ Image Box */
+.image-box {
+    flex: 1; /* ใช้พื้นที่ 1.5 ส่วนของ Flexbox */
+    margin-right: 25px; /* ช่องว่างทางขวาของกล่องรูปภาพ */
+}
+
+.image-box img {
+    width: 100%; /* ขยายรูปภาพให้เต็มความกว้าง */
+    border-radius: 15px; /* มุมโค้งของรูปภาพ */
+    border: 5px solid #ff6600; /* ขอบสีส้มรอบรูปภาพ */
+}
+/* Text Box */
+.text-box {
+    flex: 1;
+    border: 2px dashed #ff6600;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+}
