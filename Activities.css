@@ -136,3 +136,28 @@ body {
     font-size: 22px;
     line-height: 1.6;
 }
+
+
+.image-grid {
+    display: grid; /* ใช้ Grid Layout สำหรับจัดวางรูปภาพ */
+    grid-template-columns: repeat(3, 1fr); /* กำหนดให้มี 3 คอลัมน์ในแต่ละแถว */
+    gap: 20px; /* ระยะห่างระหว่างรูปภาพ */
+    padding: 20px; /* เว้นระยะขอบภายในของ container */
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
+    margin: auto; /* จัดวางให้อยู่ตรงกลางของหน้าจอ */
+}
+
+.image-item {
+    display: flex; /* ใช้ Flexbox สำหรับจัดตำแหน่งเนื้อหา */
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    border-radius: 5px; /* ทำให้มุมของกล่องมีความโค้ง */
+    overflow: hidden; /* ซ่อนส่วนที่เกินขอบของกล่อง */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กล่อง */
+}
+
+.image-item img {
+    width: 100%; /* ปรับรูปภาพให้กว้างเต็มกล่อง */
+    height: auto; /* รักษาสัดส่วนของรูปภาพ */
+    display: block; /* แก้ไขปัญหา gap ด้านล่างของรูปภาพ */
+}

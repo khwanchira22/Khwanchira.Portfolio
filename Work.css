@@ -77,7 +77,6 @@
 
 /* สไตล์ทั่วไปของ body */
 body {
-    font-family: Arial, sans-serif; /* ตั้งค่าแบบอักษรของหน้า */
     background-color: #2C2C2B; /* สีพื้นหลังของหน้า */
     color: white; /* สีตัวอักษร */
 }
@@ -184,4 +183,86 @@ body {
 }
 .image-sliders-section[data-sliders-id="sliders"] {
     background-color: #444;  /* สีพื้นหลัง */
+}
+
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    padding: 10px;
+    background-color: #2C2C2B;
+}
+
+.header-section h1 {
+    font-size: 55px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของลิงก์ */
+    font-family: 'Poppins', sans-serif; /* ฟอนต์ Poppins */
+    font-weight: 600
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    width: 75%;
+    margin: 40px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* สไตล์ Image Box */
+.image-box {
+    flex: 1; /* ใช้พื้นที่ 1.5 ส่วนของ Flexbox */
+    margin-right: 25px; /* ช่องว่างทางขวาของกล่องรูปภาพ */
+}
+
+.image-box img {
+    width: 100%; /* ขยายรูปภาพให้เต็มความกว้าง */
+    border-radius: 15px; /* มุมโค้งของรูปภาพ */
+    border: 5px solid #ff6600; /* ขอบสีส้มรอบรูปภาพ */
+}
+/* Text Box */
+.text-box {
+    flex: 1;
+    border: 2px dashed #ff6600;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.text-box p{
+    font-family: 'Mitr', sans-serif;
+}
+
+
+button {
+    color: #333;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    font-size: 22px;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
+    transform: scale(1.1); /* ซูม 10% เมื่อวางเมาส์ */
 }
