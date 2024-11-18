@@ -252,13 +252,15 @@ body {
 
 
 button {
-    color: #333;
-    background-color: #ffffff;
+    color: #ffffff;
+    text-shadow:  0px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #555;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
     margin: 20px auto;
     font-size: 22px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
