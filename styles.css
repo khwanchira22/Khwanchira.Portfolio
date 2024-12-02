@@ -1,211 +1,194 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin: 0; /* ตั้งค่า margin ทุกส่วนของเว็บเป็น 0 */
+    padding: 0; /* ตั้งค่า padding ทุกส่วนของเว็บเป็น 0 */
+    box-sizing: border-box; /* รวม border และ padding ในขนาดของกล่อง */
+    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins สำหรับทุกส่วน */
 }
+
 /* สไตล์ Navbar */
 .navbar {
-    display: flex; /* ใช้ Flexbox สำหรับการจัดวาง */
-    justify-content: space-between; /* ช่องว่างระหว่างองค์ประกอบใน Navbar */
-    align-items: center; /* จัดวางองค์ประกอบแนวตั้ง */
-    padding: 10px 20px; /* เว้นระยะห่างภายใน Navbar */
-    background-color: #333; /* สีพื้นหลังของ Navbar */
-    color: white; /* สีข้อความใน Navbar */
+    display: flex; /* ใช้ Flexbox สำหรับการจัดวางแนวนอน */
+    justify-content: space-between; /* กระจายพื้นที่ระหว่างองค์ประกอบซ้ายและขวา */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+    padding: 10px 20px; /* เพิ่มระยะห่างภายใน Navbar */
+    background-color: #333; /* สีพื้นหลัง Navbar เป็นสีเทาเข้ม */
+    color: white; /* สีข้อความใน Navbar เป็นสีขาว */
 }
 
 .navbar .logo a {
-    color: white; /* กำหนดสีของลิงค์เป็นสีขาว */
-    text-decoration: none; /* เอาเส้นใต้ลิงค์ออก */
-    transition: transform 0.2s ease, color 0.2s ease; /* เพิ่ม transition เพื่อให้การซูมลื่นไหล */
-    display: inline-block; /* กำหนดให้เป็น inline-block เพื่อให้ transform ทำงาน */
+    color: white; /* กำหนดสีลิงก์โลโก้เป็นสีขาว */
+    text-decoration: none; /* ลบเส้นใต้ลิงก์ */
+    transition: transform 0.2s ease, color 0.2s ease; /* เพิ่มความลื่นไหลให้การเปลี่ยนสีและขนาด */
+    display: inline-block; /* แสดงผลลิงก์เป็นบล็อกขนาดเล็ก */
 }
 
 .navbar .logo a:hover {
-    color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
-    transform: scale(1.2); /* ซูม 10% เมื่อวางเมาส์ */
+    color: #ff7b00; /* เปลี่ยนสีลิงก์เป็นสีส้มเมื่อวางเมาส์ */
+    transform: scale(1.2); /* ขยายขนาดลิงก์ 20% เมื่อวางเมาส์ */
 }
 
-/* โลโก้เดิม */
+/* โลโก้ */
 .navbar .logo {
-    font-size: 30px; /* ขนาดตัวอักษรโลโก้ */
+    font-size: 30px; /* กำหนดขนาดฟอนต์ของโลโก้ */
     font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของข้อความ */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ข้อความโลโก้ */
 }
 
 .nav-links {
-    list-style: none; /* เอาสัญลักษณ์หน้ารายการออก */
-    display: flex; /* จัดลิงก์ในแนวนอน */
-    gap: 20px; /* ช่องว่างระหว่างลิงก์ */
+    list-style: none; /* ลบจุดหน้ารายการ */
+    display: flex; /* จัดวางลิงก์ในแนวนอน */
+    gap: 20px; /* เพิ่มช่องว่างระหว่างลิงก์ */
 }
 
 .nav-links a {
-    color: white; /* สีของลิงก์ */
-    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
-    font-size: 15px; /* ขนาดตัวอักษรของลิงก์ */
-    font-family: 'Poppins', sans-serif; /* ฟอนต์ Poppins */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของลิงก์ */
-    transition: transform 0.3s ease, color 0.2s ease; /* เพิ่ม transition เพื่อให้การซูมลื่นไหล */
-    display: inline-block; /* กำหนดให้เป็น inline-block เพื่อให้ transform ทำงาน */
+    color: white; /* กำหนดสีของลิงก์เป็นสีขาว */
+    text-decoration: none; /* ลบเส้นใต้ลิงก์ */
+    font-size: 15px; /* กำหนดขนาดตัวอักษรของลิงก์ */
+    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ข้อความลิงก์ */
+    transition: transform 0.3s ease, color 0.2s ease; /* เพิ่มความลื่นไหลให้การเปลี่ยนสีและขนาด */
+    display: inline-block; /* แสดงผลลิงก์เป็นบล็อกขนาดเล็ก */
 }
 
 .nav-links a:hover {
-    color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
-    transform: scale(1.2); /* ซูม 10% เมื่อวางเมาส์ */
+    color: #ff7b00; /* เปลี่ยนสีลิงก์เป็นสีส้มเมื่อวางเมาส์ */
+    transform: scale(1.2); /* ขยายขนาดลิงก์ 20% เมื่อวางเมาส์ */
 }
-
 
 /* Profile Section */
 .profile {
-    text-align: center;
-    background-color: #222;
-    color: white;
-    padding: 50px 20px;
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+    background-color: #222; /* สีพื้นหลังเป็นสีดำเข้ม */
+    color: white; /* สีข้อความเป็นสีขาว */
+    padding: 50px 20px; /* เพิ่มระยะห่างด้านใน */
 }
 
 .photo-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* ใช้ Flexbox สำหรับการจัดวาง */
+    justify-content: center; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
 }
 
 .photo-section img {
-    width: auto;
-    height: 680px; 
+    width: auto; /* ปรับความกว้างอัตโนมัติ */
+    height: 680px; /* ความสูงของรูป */
 }
 
 .photo {
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 150px; /* กำหนดความกว้างของรูป */
+    height: 200px; /* กำหนดความสูงของรูป */
+    object-fit: cover; /* ปรับรูปให้เต็มกรอบ */
+    border-radius: 8px; /* มุมของรูปโค้งมน */
 }
 
 .profile-text {
-    margin-top: 0px;
-    font-size: 25px;
+    margin-top: 0px; /* ลบระยะห่างด้านบน */
+    font-size: 25px; /* กำหนดขนาดฟอนต์ */
 }
 
 .profile-text h2 {
-    font-size: 68px;
-    margin-bottom: 10px;
+    font-size: 68px; /* ขนาดหัวข้อใหญ่ */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
 }
 
 .highlight {
-    color: #ff4500;
+    color: #ff4500; /* กำหนดสีข้อความเป็นสีส้ม */
 }
 
 .quote {
-    font-style: italic;
-    margin-bottom: 10px;
-    margin-top: 15px;
-    color: #ffa07a;
+    font-style: italic; /* ตัวอักษรเอียง */
+    margin-bottom: 10px; /* เว้นระยะด้านล่าง */
+    margin-top: 15px; /* เว้นระยะด้านบน */
+    color: #ffa07a; /* กำหนดสีเป็นสีส้มอ่อน */
 }
 
 /* Education Section */
 .education {
-    padding: 40px 20px;
-    background-color: #333;
+    padding: 40px 20px; /* เว้นระยะด้านใน */
+    background-color: #333; /* สีพื้นหลังเทาเข้ม */
 }
 
 .education h3 {
-    font-size: 60px;
-    margin-bottom: 35px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 60px; /* ขนาดหัวข้อใหญ่ */
+    margin-bottom: 35px; /* ระยะห่างด้านล่าง */
+    color: rgb(255, 255, 255); /* สีข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins */
+    font-weight: 600; /* น้ำหนักตัวอักษรหนา */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ข้อความ */
 }
 
 .education-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex; /* ใช้ Flexbox สำหรับการจัดวาง */
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    gap: 20px; /* ช่องว่างระหว่างการ์ด */
+    flex-wrap: wrap; /* ให้การ์ดพับลงเมื่อพื้นที่ไม่พอ */
 }
 
 .card {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 20px;
-    width: 330px;
-    text-align: center;
+    background-color: #ffffff; /* สีพื้นหลังของการ์ด */
+    padding: 40px; /* ระยะห่างด้านในการ์ด */
+    border-radius: 20px; /* มุมโค้งมนของการ์ด */
+    width: 330px; /* ความกว้างของการ์ด */
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* รูปปรับขนาดเต็มการ์ด */
+    height: auto; /* ความสูงอัตโนมัติ */
 }
 
 .card p {
-    margin-top: 5px;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    color: #ff4500;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5px; /* ระยะห่างด้านบน */
+    font-size: 25px; /* ขนาดข้อความ */
+    font-weight: bold; /* น้ำหนักตัวอักษรหนา */
+    color: #ff4500; /* สีข้อความเป็นสีส้ม */
 }
 
 .card span {
-    margin-top: 10px;
-    display: block;
-    font-size: 18px;
-    color: #000000;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    display: block; /* จัดข้อความเป็นบล็อก */
+    font-size: 18px; /* ขนาดข้อความ */
+    color: #000000; /* สีข้อความเป็นสีดำ */
 }
 
 /* GPA Section */
 .GPA {
-    display: flex;
-    justify-content: flex-end; /* ชิดขวา */
-    padding: 20px 200px;
-    background-color: #333;
+    display: flex; /* ใช้ Flexbox */
+    justify-content: flex-end; /* จัดให้อยู่ชิดขวา */
+    padding: 20px 200px; /* เว้นระยะห่างด้านใน */
+    background-color: #333; /* สีพื้นหลังเทาเข้ม */
 }
 
 .GPA-text h2 {
-    margin-top: -50px;
-    font-size: 40px;
-    color: #ff4500;
-    margin-bottom: -10px;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: -50px; /* ขยับหัวข้อขึ้น */
+    font-size: 40px; /* ขนาดหัวข้อ */
+    color: #ff4500; /* สีข้อความเป็นสีส้ม */
 }
 
 .GPA-text {
-    font-size: 20px;
-    text-align: right;
-    padding: 20px;
-    line-height: 2.2;
-    margin-bottom: 10px;
-    color: #ffffff;
+    font-size: 20px; /* ขนาดข้อความ */
+    text-align: right; /* จัดข้อความชิดขวา */
+    line-height: 2.2; /* ระยะห่างระหว่างบรรทัด */
+    color: #ffffff; /* สีข้อความเป็นสีขาว */
 }
 
 /* Contact Section */
 .Contact {
-    display: flex;
-    justify-content: flex-start; /* ชิดซ้าย */
-    padding: 20px 200px;
-    background-color: #333;
+    display: flex; /* ใช้ Flexbox */
+    justify-content: flex-start; /* จัดให้อยู่ชิดซ้าย */
+    padding: 20px 200px; /* เว้นระยะห่างด้านใน */
+    background-color: #333; /* สีพื้นหลังเทาเข้ม */
 }
 
 .Contact-text h2 {
-    margin-top: -50px;
-    font-size: 40px;
-    color: #ff4500;
-    margin-bottom: -10px;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 40px; /* ขนาดหัวข้อ */
+    color: #ff4500; /* สีข้อความเป็นสีส้ม */
 }
 
 .Contact-text {
-    font-size: 20px;
-    text-align: left;
-    padding: 20px;
-    line-height: 2.2;
-    margin-bottom: 10px;
-    color: #ffffff;
+    font-size: 20px; /* ขนาดข้อความ */
+    line-height: 2.2; /* ระยะห่างระหว่างบรรทัด */
+    color: #ffffff; /* สีข้อความ */
 }
