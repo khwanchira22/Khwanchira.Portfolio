@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins สำหรับทุกส่วน */
 }
 
+
 /* สไตล์ Navbar */
 .navbar {
     display: flex; /* ใช้ Flexbox สำหรับการจัดวางแนวนอน */
@@ -105,6 +106,7 @@
 
 /* Education Section */
 .education {
+    height: auto;
     padding: 40px 20px; /* เว้นระยะด้านใน */
     background-color: #333; /* สีพื้นหลังเทาเข้ม */
 }
@@ -191,4 +193,93 @@
     font-size: 20px; /* ขนาดข้อความ */
     line-height: 2.2; /* ระยะห่างระหว่างบรรทัด */
     color: #ffffff; /* สีข้อความ */
+}
+
+@media (max-width: 767px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+     .navbar .logo {
+    font-size: 15px; /* กำหนดขนาดฟอนต์ของโลโก้ */
+    }
+    .nav-links {
+        gap: 10px; /* เพิ่มช่องว่างระหว่างลิงก์ */
+    }
+    .nav-links a {
+        font-size: 10px; /* กำหนดขนาดตัวอักษรของลิงก์ */
+        display: inline-block; /* แสดงผลลิงก์เป็นบล็อกขนาดเล็ก */
+    }
+    .profile{
+        padding: 20px 20px;
+    }
+    .photo-section img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .profile-text h2{
+        font-size: 2.2rem;
+    }
+    .profile-text p{
+        font-size: 0.8rem;
+    }
+    .education h3 {
+    font-size: 2.1rem;
+    }
+    .education-cards {
+        display: flex; /* ใช้ Flexbox สำหรับการจัดวาง */
+        flex-direction: row;
+        height: 300px;
+        justify-items: center;
+        gap: 15px;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .card img{
+        flex-basis: 40%;
+    }
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 55%;
+        padding: 10px 0;
+        height: 100%;
+        text-align: left;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .card img {
+        width: 80px; /* รูปปรับขนาดเต็มการ์ด */
+        justify-content: center; /* กึ่งกลางแนวนอน */
+        align-items: center; /* กึ่งกลางแนวตั้ง */
+    }
+    .card p {
+        font-size: 1rem; /* ขนาดข้อความ */
+    }
+    .card span {
+        font-size: 0.5rem; /* ขนาดข้อความ */
+    }
+    .education {
+        height: auto;
+        padding-bottom: 250px; 
+    }
+    .GPA h2{
+        font-size: 1.5rem; /* ขนาดหัวข้อ */
+    }
+    .GPA p{
+        font-size: 1rem; /* ขนาดหัวข้อ */
+    }
+    .Contact h2{
+        font-size: 1.5rem; /* ขนาดหัวข้อ */
+    }
+    .Contact p{
+        font-size: 1rem; /* ขนาดหัวข้อ */
+    }
+   
 }

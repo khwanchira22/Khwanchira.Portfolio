@@ -11,28 +11,32 @@ function moveSlide(direction, slidersId) {
     const slidersSection = document.querySelector(`.image-sliders-section[data-sliders-id="${slidersId}"]`);
     const slidersInner = slidersSection.querySelector('.image-sliders-inner');
     const items = slidersInner.children;
-    const itemWidth = items[0].clientWidth + 15; // รวมช่องว่างระหว่างภาพ
-    const visibleItems = 4; // จำนวนภาพที่มองเห็นได้
-    const maxIndex = items.length - visibleItems; // คำนวณ index สุดท้ายที่แสดงภาพเต็ม
+    const itemWidth = items[0].clientWidth + 15; // Width of a single item including margin
 
-    // ดึงค่า index ปัจจุบัน ถ้าไม่มีให้ใช้ 0
+    // Determine visible items based on screen size
+    const isMobile = window.innerWidth <= 768; // Define "mobile" as screen width <= 768px
+    const visibleItems = isMobile ? 1 : 4; // Show 1 item on mobile, 4 items on larger screens
+    const maxIndex = items.length - visibleItems; // Calculate the max index for sliding
+
+    // Get the current index, defaulting to 0
     let currentIndex = parseInt(slidersInner.getAttribute('data-index')) || 0;
 
-    // อัพเดต index ตาม direction
+    // Update the index based on direction
     currentIndex += direction;
 
-    // วนกลับไปภาพแรกเมื่อถึงภาพสุดท้าย
+    // Wrap around to the first item if we go past the last visible set
     if (currentIndex > maxIndex) {
-        currentIndex = 0; // กลับไปที่ภาพแรก
+        currentIndex = 0; // Reset to the first item
     } else if (currentIndex < 0) {
-        currentIndex = maxIndex; // ไปยังชุดภาพสุดท้าย
+        currentIndex = maxIndex; // Go to the last visible set
     }
 
-    // ปรับค่า transform และเพิ่ม transition ให้เลื่อนนุ่มนวลยิ่งขึ้น
-    slidersInner.style.transition = "transform 0.6s ease-in-out"; // ใช้ ease-in-out และเพิ่มเวลาเป็น 0.6s
-    slidersInner.style.transform = `translateX(-${currentIndex * itemWidth}px)`; // เลื่อนตาม index
+    // Apply the transform to move the slider
+    slidersInner.style.transition = "transform 0.6s ease-in-out"; // Smooth sliding transition
+    slidersInner.style.transform = `translateX(-${currentIndex * itemWidth}px)`; // Slide based on the index
     slidersInner.setAttribute('data-index', currentIndex);
 }
+
 
 // เรียกใช้ initializeSlide เมื่อเริ่มต้น
 initializeSlide('yourSliderId'); // เปลี่ยน 'yourSliderId' เป็น id ของ slider

@@ -1,3 +1,10 @@
+/* รีเซ็ตสไตล์พื้นฐานสำหรับทุกองค์ประกอบในหน้า */
+* {
+    margin: 0; /* ตั้งค่าขอบของทุกองค์ประกอบเป็น 0 */
+    padding: 0; /* ตั้งค่าพื้นที่ด้านในของทุกองค์ประกอบเป็น 0 */
+    box-sizing: border-box; /* รวม padding และ border ในการคำนวณขนาดของกล่อง */
+    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins เป็นหลัก */
+}
 /* สไตล์ Navbar */
 .navbar {
     display: flex; /* ใช้ Flexbox สำหรับการจัดวาง */
@@ -124,4 +131,46 @@ body {
     font-size: 22px; /* ขนาดตัวอักษร */
     line-height: 0.5; /* ความสูงของบรรทัด */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของข้อความ */
+}
+@media (max-width: 767px)  {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+     .navbar .logo {
+    font-size: 15px; /* กำหนดขนาดฟอนต์ของโลโก้ */
+    }
+    .nav-links {
+        gap: 10px; /* เพิ่มช่องว่างระหว่างลิงก์ */
+    }
+    .nav-links a {
+        font-size: 10px; /* กำหนดขนาดตัวอักษรของลิงก์ */
+        display: inline-block; /* แสดงผลลิงก์เป็นบล็อกขนาดเล็ก */
+    }
+
+    .Certificate-section img {
+        width: auto; /* กำหนดความกว้างอัตโนมัติ */
+        height: 90px; /* ความสูงของรูปภาพ */
+    }
+
+    .text-box {
+        margin-top: 22px; /* ช่องว่างระหว่างกล่องข้อความและองค์ประกอบด้านบน */
+        padding: 10px; /* เว้นช่องว่างภายในกล่องข้อความ */
+        border-radius: 5px; /* มุมโค้งของกล่องข้อความ */
+        font-family: 'Mitr', sans-serif; /* ฟอนต์ Mitr */
+        font-size: 10px; /* ขนาดตัวอักษร */
+        line-height: 2; /* ความสูงของบรรทัด */
+    }
+
+    .image-box img {
+        width: 100%; /* ขยายรูปภาพให้เต็มความกว้างของกล่อง */
+        border-radius: 5px; /* มุมโค้งของรูปภาพ */
+    }
+
+    .image-box {
+        padding: 5px; /* เว้นช่องว่างภายในกล่องรูปภาพ */
+        border-radius: 10px; /* ทำให้มุมกล่องรูปภาพโค้งมน */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* เงาของกล่องรูปภาพ */
+    }
+    
 }

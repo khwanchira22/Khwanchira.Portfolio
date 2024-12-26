@@ -144,3 +144,44 @@ body {
     color: #ffffff; /* สีข้อความ */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของข้อความ */
 }
+
+@media (max-width: 767px)  {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+     .navbar .logo {
+    font-size: 15px; /* กำหนดขนาดฟอนต์ของโลโก้ */
+    }
+    .nav-links {
+        gap: 10px; /* เพิ่มช่องว่างระหว่างลิงก์ */
+    }
+    .nav-links a {
+        font-size: 10px; /* กำหนดขนาดตัวอักษรของลิงก์ */
+        display: inline-block; /* แสดงผลลิงก์เป็นบล็อกขนาดเล็ก */
+    }
+
+    .Experience-section img {
+        width: auto; /* ความกว้างอัตโนมัติ */
+        height: 90px; /* ความสูงของรูปภาพ */
+    }
+
+    .header-section h1 {
+        font-size: 20px; /* ขนาดตัวอักษร */
+    }
+
+    .gallery-section {
+        padding: 15px; /* เว้นระยะรอบๆ ส่วนแกลลอรี่ */
+    }
+
+    .description-section h2 {
+        font-size: 15px; /* ขนาดตัวอักษร */
+    }
+
+    .description-section p {
+        font-size: 10px; /* ขนาดตัวอักษรของย่อหน้า */
+        width: 80%; /* ความกว้างของย่อหน้า */
+    
+    }
+
+}

@@ -1,190 +1,167 @@
-/* รีเซ็ตสไตล์พื้นฐานสำหรับทุกองค์ประกอบในหน้า */
+/* Reset Styles */
 * {
-    margin: 0; /* ตั้งค่าขอบของทุกองค์ประกอบเป็น 0 */
-    padding: 0; /* ตั้งค่าพื้นที่ด้านในของทุกองค์ประกอบเป็น 0 */
-    box-sizing: border-box; /* รวม padding และ border ในการคำนวณขนาดของกล่อง */
-    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins เป็นหลัก */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-/* สไตล์ Navbar */
+
+/* Navbar */
 .navbar {
-    display: flex; /* ใช้ Flexbox สำหรับการจัดวาง */
-    justify-content: space-between; /* ช่องว่างระหว่างองค์ประกอบใน Navbar */
-    align-items: center; /* จัดวางองค์ประกอบแนวตั้ง */
-    padding: 10px 20px; /* เว้นระยะห่างภายใน Navbar */
-    background-color: #333; /* สีพื้นหลังของ Navbar */
-    color: white; /* สีข้อความใน Navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
 }
 
 .navbar .logo a {
-    color: white; /* กำหนดสีของลิงค์เป็นสีขาว */
-    text-decoration: none; /* เอาเส้นใต้ลิงค์ออก */
-    transition: transform 0.2s ease, color 0.2s ease; /* เพิ่ม transition เพื่อให้การซูมลื่นไหล */
-    display: inline-block; /* กำหนดให้เป็น inline-block เพื่อให้ transform ทำงาน */
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
 }
 
 .navbar .logo a:hover {
-    color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
-    transform: scale(1.2); /* ซูม 10% เมื่อวางเมาส์ */
+    color: #ff7b00;
+    transform: scale(1.2);
 }
 
-/* โลโก้เดิม */
 .navbar .logo {
-    font-size: 30px; /* ขนาดตัวอักษรโลโก้ */
-    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของข้อความ */
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
-    list-style: none; /* เอาสัญลักษณ์หน้ารายการออก */
-    display: flex; /* จัดลิงก์ในแนวนอน */
-    gap: 20px; /* ช่องว่างระหว่างลิงก์ */
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
-    color: white; /* สีของลิงก์ */
-    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
-    font-size: 15px; /* ขนาดตัวอักษรของลิงก์ */
-    font-family: 'Poppins', sans-serif; /* ฟอนต์ Poppins */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของลิงก์ */
-    transition: transform 0.3s ease, color 0.2s ease; /* เพิ่ม transition เพื่อให้การซูมลื่นไหล */
-    display: inline-block; /* กำหนดให้เป็น inline-block เพื่อให้ transform ทำงาน */
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, color 0.2s ease;
+    display: inline-block;
 }
 
 .nav-links a:hover {
-    color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
-    transform: scale(1.2); /* ซูม 10% เมื่อวางเมาส์ */
+    color: #ff7b00;
+    transform: scale(1.2);
 }
 
-
-/* ส่วนของ "My Work" หรือการแสดงผลงาน */
+/* My Work Section */
 .Work {
-    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
-    background-color: #2C2C2B; /* สีพื้นหลังเทาเข้ม */
-    padding: 50px 20px; /* พื้นที่ว่างรอบ ๆ ส่วนนี้ */
+    text-align: center;
+    background-color: #2C2C2B;
+    padding: 50px 20px;
 }
 
 .Work-section {
-    display: flex; /* ใช้ Flexbox ในการจัดวาง */
-    justify-content: center; /* จัดวางองค์ประกอบให้กึ่งกลาง */
-    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-    gap: 80px; /* ช่องว่างระหว่างองค์ประกอบ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 
 .Work-section img {
-    width: auto; /* ความกว้างอัตโนมัติ */
-    height: 220px; /* กำหนดความสูงของรูปภาพ */
+    width: auto;
+    height: 180px;
 }
 
-/* สไตล์ทั่วไปของ body */
+/* General Body Styling */
 body {
-    background-color: #2C2C2B; /* สีพื้นหลังของหน้า */
-    color: white; /* สีตัวอักษร */
+    background-color: #2C2C2B;
+    color: white;
 }
 
-/* สไตล์พื้นฐานของ Section แสดง Image Slider */
+/* Image Slider Section */
 .image-sliders-section {
-    padding: 40px 20px 20px; /* เว้นพื้นที่รอบ ๆ ส่วนนี้ */
-    margin: 50px auto; /* จัดให้เป็นกึ่งกลางแนวนอน */
-    border-radius: 10px; /* มุมโค้งมน */
-    bottom: 50px; /* เลื่อนกล่องลง 50px (ไม่ส่งผลจนกว่าตำแหน่งจะถูกเปลี่ยนเป็น absolute หรือ fixed) */
-    width: 80%; /* ความกว้าง 80% ของหน้าจอ */
-    max-width: 1300px; /* กำหนดความกว้างสูงสุด */
-    overflow: hidden; /* ซ่อนองค์ประกอบที่เกินออกมา */
-    position: relative; /* ตั้งให้มีตำแหน่งแบบ relative สำหรับการควบคุมตำแหน่ง */
-    box-shadow: 0px 4px 15px #00000080; /* เงาใต้กล่อง */
-}
-
-/* สไตล์ของข้อความหัวเรื่องในแต่ละ Slider */
-.image-sliders-section .item-text {
-    position: absolute; /* วางตำแหน่งให้สัมพันธ์กับ container */
-    top: -55px; /* ขยับขึ้นด้านบน */
-    left: 20px;
-    color: #ffffff; /* สีขาว */
-    font-size: 24px; /* ขนาดตัวอักษร */
-    font-weight: bold; /* ตัวหนา */
-    z-index: 1;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* เพิ่มเงาให้ข้อความ */
-}
-
-/* Container ของ Slider */
-.image-sliders-section .image-sliders-container {
-    position: relative; /* ตำแหน่งสัมพันธ์ */
-    display: flex; /* ใช้ Flexbox */
-    align-items: center; /* จัดให้กึ่งกลางในแนวตั้ง */
-    margin-top: 50px; /* เว้นระยะห่างจากด้านบน */
-    padding: 20px; /* พื้นที่ว่างรอบ container */
-}
-
-/* สไตล์ภายในของภาพแต่ละภาพ */
-.image-sliders-section .image-sliders-inner {
-    display: flex; /* Flexbox แนวนอน */
-    transition: transform 0.5s ease; /* การเปลี่ยนตำแหน่งมีการเคลื่อนที่ */
-    gap: 15px; /* ช่องว่างระหว่างภาพ */
-}
-
-/* สไตล์ของภาพแต่ละรายการ */
-.image-sliders-section .item {
-    flex: 0 0 25%; /* แสดงภาพ 4 ภาพในแถวเดียว */
-    padding: 5px;
+    padding: 40px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1300px;
+    overflow: hidden;
     position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    background-color: #444; /* Default background color */
+}
+
+.image-sliders-section .image-sliders-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0px 5px;
+    gap: 10px;
+}
+
+.image-sliders-section .image-sliders-inner {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.image-sliders-section .item {
+    flex: 0 0 25%; /* Default: 4 images per row */
+    padding: 5px;
 }
 
 .image-sliders-section .item img {
-    width: 100%; /* ขยายให้เต็มพื้นที่ */
-    height: auto; /* ความสูงอัตโนมัติ */
-    border-radius: 10px; /* มุมโค้งของรูปภาพ */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* เงารอบ ๆ รูปภาพ */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* ปุ่มควบคุมการเลื่อนภาพ */
+/* Navigation Controls */
 .image-sliders-section .sliders-control {
-    position: absolute; /* ตำแหน่งสัมพันธ์ */
-    top: 50%; /* จัดวางตรงกลางในแนวตั้ง */
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งแสง */
-    color: white; /* สีขาว */
-    font-size: 24px; /* ขนาดตัวอักษร */
-    cursor: pointer; /* เปลี่ยนเป็นมือเมื่อวางเมาส์ */
-    padding: 10px 15px; /* ช่องว่างรอบปุ่ม */
-    border-radius: 8px; /* มุมโค้งมน */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
     z-index: 10;
-    border: none; /* ไม่มีเส้นขอบ */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* การเปลี่ยนสีพื้นหลังและขนาดปุ่ม */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .image-sliders-section .sliders-control.left {
-    left: 10px; /* วางด้านซ้าย */
+    left: 10px;
 }
 
 .image-sliders-section .sliders-control.right {
-    right: 10px; /* วางด้านขวา */
+    right: 10px;
 }
 
 .image-sliders-section .sliders-control:hover {
-    background-color: #ff6600; /* สีของปุ่มเมื่อเลื่อนเมาส์ */
-    transform: translateY(-50%) scale(1.1); /* ขยายปุ่มเมื่อเลื่อนเมาส์ */
+    background-color: #ff6600;
+    transform: translateY(-50%) scale(1.1);
 }
 
-/* สไตล์พื้นหลังที่แตกต่างกันสำหรับแต่ละ Slider */
+/* Specific Backgrounds for Sliders */
 .image-sliders-section[data-sliders-id="sliders1"] {
-    background-color: #444;  /* สีพื้นหลัง */
+    background-color: #444;
 }
 
 .image-sliders-section[data-sliders-id="sliders2"] {
-    background-color: #333; /* สีพื้นหลัง */
+    background-color: #333;
 }
 
 .image-sliders-section[data-sliders-id="sliders3"] {
-    background-color: #444;  /* สีพื้นหลัง */
+    background-color: #444;
 }
 
 .image-sliders-section[data-sliders-id="sliders4"] {
-    background-color: #333; /* สีพื้นหลัง */
+    background-color: #333;
 }
-.image-sliders-section[data-sliders-id="sliders"] {
-    background-color: #444;  /* สีพื้นหลัง */
-}
-
 
 /* Header Section */
 .header-section {
@@ -196,9 +173,15 @@ body {
 .header-section h1 {
     font-size: 55px;
     color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของลิงก์ */
-    font-family: 'Poppins', sans-serif; /* ฟอนต์ Poppins */
-    font-weight: 600
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+
+/* Image Box */
+.image-box img {
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid #ff6600;
 }
 
 /* Content Section */
@@ -215,39 +198,13 @@ body {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-/* Container */
-.container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-/* สไตล์ Image Box */
-.image-box {
-    flex: 1; /* ใช้พื้นที่ 1.5 ส่วนของ Flexbox */
-    margin-right: 25px; /* ช่องว่างทางขวาของกล่องรูปภาพ */
-}
-
-.image-box img {
-    width: 100%; /* ขยายรูปภาพให้เต็มความกว้าง */
-    border-radius: 15px; /* มุมโค้งของรูปภาพ */
-    border: 5px solid #ff6600; /* ขอบสีส้มรอบรูปภาพ */
-}
-/* Text Box */
-.text-box {
-    flex: 1;
-    border: 2px dashed #ff6600;
-    border-radius: 10px;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    line-height: 1.6;
-}
-
+/* Buttons */
 .text-box p{
     font-family: 'Mitr', sans-serif;
+    font-size: 19px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -261,10 +218,87 @@ button {
     margin: 20px auto;
     font-size: 22px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง (ถ้าจำเป็น) */
 }
 
 button:hover {
+    background-color: #ff7b00;
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .navbar .logo {
+        font-size: 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .Work-section img {
+        height: 90px;
+    }
+    .Work {
+        padding: 30px 
+    }
+
+    .image-sliders-section {
+        padding: 20px 10px;
+    }
+
+    .image-sliders-section .image-sliders-inner {
+        gap: 5px;
+    }
+
+    .image-sliders-section .item {
+        flex: 0 0 100%; /* Show one image at a time */
+        max-width: 100%;
+    }
+
+    .image-sliders-section .item img {
+        border-radius: 5px;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .image-sliders-section .sliders-control {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .text-box p{
+    font-family: 'Mitr', sans-serif;
+    font-size: 12px;
     color: #ffffff;
-    background-color: #ff7b00; /* สีเมื่อวางเมาส์บนลิงก์ */
-    transform: scale(1.1); /* ซูม 10% เมื่อวางเมาส์ */
+    padding: 16px 5px;
+    text-align: center; /* จัดข้อความในแนวนอน */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    }
+
+    button {
+    font-size: 15px;
+    } 
+    
 }
