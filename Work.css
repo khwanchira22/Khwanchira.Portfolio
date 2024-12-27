@@ -251,7 +251,9 @@ button:hover {
         height: 90px;
     }
     .Work {
+        margin-bottom: -50px; 
         padding: 30px 
+    
     }
 
     .image-sliders-section {
@@ -278,6 +280,14 @@ button:hover {
         font-size: 20px;
         padding: 8px 12px;
     }
+
+
+    /* Image Box */
+    .image-box img {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #ff6600;
+}
 
     .text-box p{
     font-family: 'Mitr', sans-serif;

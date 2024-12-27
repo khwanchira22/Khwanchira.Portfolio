@@ -166,6 +166,10 @@ body {
         height: 90px; /* ความสูงของรูปภาพ */
     }
 
+    .Experience-section {
+        padding: 10px 20px;
+    }
+
     .header-section h1 {
         font-size: 20px; /* ขนาดตัวอักษร */
     }

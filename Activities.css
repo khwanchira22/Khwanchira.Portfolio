@@ -54,7 +54,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Mitr', sans-serif;
 }
 
@@ -123,7 +122,7 @@ body {
 .image-box img {
     width: 100%; /* ขยายรูปภาพให้เต็มความกว้าง */
     border-radius: 15px; /* มุมโค้งของรูปภาพ */
-    border: 5px solid #ff6600; /* ขอบสีส้มรอบรูปภาพ */
+    border: 4px solid #ff6600; /* ขอบสีส้มรอบรูปภาพ */
 }
 /* Text Box */
 .text-box {
@@ -151,8 +150,7 @@ body {
     display: flex; /* ใช้ Flexbox สำหรับจัดตำแหน่งเนื้อหา */
     justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
     align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
-    border-radius: 5px; /* ทำให้มุมของกล่องมีความโค้ง */
-    overflow: hidden; /* ซ่อนส่วนที่เกินขอบของกล่อง */
+    border-radius: px; /* ทำให้มุมของกล่องมีความโค้ง */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กล่อง */
 }
 
@@ -161,6 +159,11 @@ body {
     height: auto; /* รักษาสัดส่วนของรูปภาพ */
     display: block; /* แก้ไขปัญหา gap ด้านล่างของรูปภาพ */
 }
+
+
+
+
+
 @media (max-width: 767px)  {
     body {
         width: 100vw;
@@ -188,8 +191,46 @@ body {
 
     .text-box {
         text-align: center;
-        font-size: 10px;
+        font-size: 6px;
+        padding: 4px;
     }
 
     
+
+/* Content Section */
+    .content-section {
+        padding: 50px;
+        gap: 20px;
+        background-color: #333;
+        border-radius: 10px;
+        width: 65%;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+    .image-box img {
+        width: 150%; /* ขยายรูปภาพให้เต็มความกว้าง */
+        border-radius: 4px; /* มุมโค้งของรูปภาพ */
+        border: 2px solid #ff6600; /* ขอบสีส้มรอบรูปภาพ */
+    }
+
+    .image-grid {
+        display: grid; /* ใช้ Grid Layout สำหรับจัดวางรูปภาพ */
+        grid-template-columns: repeat(2, 1fr); /* กำหนดให้มี 3 คอลัมน์ในแต่ละแถว */
+        gap: 10px; /* ระยะห่างระหว่างรูปภาพ */
+        width: 100%; /* ปรับรูปภาพให้กว้างเต็มกล่อง */
+    }
+    
+    .image-item {
+        display: flex; /* ใช้ Flexbox สำหรับจัดตำแหน่งเนื้อหา */
+        justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+        align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กล่อง */
+    }
+    
+    .image-item img {
+        width: 100%; /* ปรับรูปภาพให้กว้างเต็มกล่อง */
+        height: auto; /* รักษาสัดส่วนของรูปภาพ */
+        display: block; /* แก้ไขปัญหา gap ด้านล่างของรูปภาพ */
+    }
 }
