@@ -3,7 +3,6 @@
     margin: 0; /* ตั้งค่าขอบของทุกองค์ประกอบเป็น 0 */
     padding: 0; /* ตั้งค่าพื้นที่ด้านในของทุกองค์ประกอบเป็น 0 */
     box-sizing: border-box; /* รวม padding และ border ในการคำนวณขนาดของกล่อง */
-    font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins เป็นหลัก */
 }
 /* สไตล์ Navbar */
 .navbar {
@@ -129,9 +128,14 @@ body {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* เงาของกล่องข้อความ */
     font-family: 'Mitr', sans-serif; /* ฟอนต์ Mitr */
     font-size: 22px; /* ขนาดตัวอักษร */
-    line-height: 0.5; /* ความสูงของบรรทัด */
+    line-height: 1.5; /* ความสูงของบรรทัด */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เงาของข้อความ */
 }
+
+
+
+
+
 @media (max-width: 767px)  {
     body {
         width: 100vw;

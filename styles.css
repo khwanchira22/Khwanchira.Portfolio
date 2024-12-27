@@ -1,11 +1,14 @@
 /* General Reset */
 * {
-    margin: 0; /* ตั้งค่า margin ทุกส่วนของเว็บเป็น 0 */
-    padding: 0; /* ตั้งค่า padding ทุกส่วนของเว็บเป็น 0 */
-    box-sizing: border-box; /* รวม border และ padding ในขนาดของกล่อง */
+    margin: 0; /* ตั้งค่าขอบของทุกองค์ประกอบเป็น 0 */
+    padding: 0; /* ตั้งค่าพื้นที่ด้านในของทุกองค์ประกอบเป็น 0 */
+    box-sizing: border-box; /* รวม padding และ border ในการคำนวณขนาดของกล่อง */
     font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins สำหรับทุกส่วน */
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 /* สไตล์ Navbar */
 .navbar {
