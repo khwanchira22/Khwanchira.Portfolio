@@ -10,6 +10,7 @@ html, body {
     overflow-x: hidden;
 }
 
+
 /* สไตล์ Navbar */
 .navbar {
     display: flex; /* ใช้ Flexbox สำหรับการจัดวางแนวนอน */
@@ -162,7 +163,7 @@ html, body {
 .GPA {
     display: flex; /* ใช้ Flexbox */
     justify-content: flex-end; /* จัดให้อยู่ชิดขวา */
-    padding: 20px 200px; /* เว้นระยะห่างด้านใน */
+    padding: 20px 450px; /* เว้นระยะห่างด้านใน */
     background-color: #333; /* สีพื้นหลังเทาเข้ม */
 }
 
@@ -183,7 +184,7 @@ html, body {
 .Contact {
     display: flex; /* ใช้ Flexbox */
     justify-content: flex-start; /* จัดให้อยู่ชิดซ้าย */
-    padding: 20px 200px; /* เว้นระยะห่างด้านใน */
+    padding: 20px 450px; /* เว้นระยะห่างด้านใน */
     background-color: #333; /* สีพื้นหลังเทาเข้ม */
 }
 
@@ -272,17 +273,31 @@ html, body {
         height: auto;
         padding-bottom: 250px; 
     }
-    .GPA h2{
-        font-size: 1.5rem; /* ขนาดหัวข้อ */
+    .GPA {
+        justify-content: flex-end; /* ยังคงชิดขวา */
+        align-items: flex-end; /* ชิดขวาทั้งในแนวนอนและแนวตั้ง */
+        padding: 15px; /* ลด Padding บนมือถือ */
     }
-    .GPA p{
-        font-size: 1rem; /* ขนาดหัวข้อ */
+
+    .GPA h2 {
+        font-size: 1.4rem; /* ลดขนาดหัวข้อเล็กน้อย */
     }
-    .Contact h2{
-        font-size: 1.5rem; /* ขนาดหัวข้อ */
+
+    .GPA p {
+        font-size: 0.9rem; /* ลดขนาดข้อความเล็กน้อย */
     }
-    .Contact p{
-        font-size: 1rem; /* ขนาดหัวข้อ */
+    .Contact {
+        justify-content: flex-start; /* ยังคงชิดซ้าย */
+        align-items: flex-start; /* ชิดซ้ายในแนวนอน */
+        padding: 15px; /* ลด Padding บนมือถือ */
+    }
+
+    .Contact h2 {
+        font-size: 1.4rem; /* ลดขนาดหัวข้อเล็กน้อย */
+    }
+
+    .Contact p {
+        font-size: 0.9rem; /* ลดขนาดข้อความเล็กน้อย */
     }
    
 }
